@@ -1,0 +1,112 @@
+header {
+    font-family: Helvetica, Times, serif;
+    background-color: lightslategray;
+    text-align: center;
+    border: 3px solid lightgray;
+    border-radius: 5px;
+    color: black;
+}
+
+
+body {
+    background-color: #26282A;
+
+}
+
+.inputfield {
+    font-size: 20px;
+    font-family: Helvetica, Times, serif;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: whitesmoke;
+    width: 200px;
+    height: 300px;
+    border: 4px solid wheat;
+    border-radius: 5px;
+   
+}
+
+.dataread {
+    position: absolute;
+    top: 30%;
+    font-family: Helvetica, Times, serif;  
+}
+
+.dataread2 {
+    position: absolute;
+    top: 50%;
+    font-family: Helvetica, Times, serif;  
+}
+
+
+
+.styled {
+    margin-top: 29px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 39px;
+    font-size: 1rem;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px #26282A;
+    border-radius: 10px;
+    background-color: rgba(29, 0, 0, 1);
+    background-image: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 30%,
+      rgba(0, 0, 0, 0)
+    );
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  .styled:hover {
+    background-color: #26282A;
+  }
+  
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+input {
+    color: #26282A;
+    font-size: 13px;
+}
+
+
+#nachricht {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    font-size: 2em; 
+    display: none; 
+}
+
+.textlogo a {
+    background-color: rgb(255, 255, 255, 0.8); 
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: green;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 5px 10px;
+}
+
+.styled:active {
+    background: linear-gradient(90deg, red 50%, green 50%);    
+  }
+
