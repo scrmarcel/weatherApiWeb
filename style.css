@@ -38,7 +38,7 @@ header h1 {
   font-size: 18px;
   text-align: center;
   background-color: whitesmoke;
-  width: 350px;
+  width: 450px; /* Increased from 350px */
   padding: 25px;
   border: 4px solid #ddd;
   border-radius: 12px;
@@ -66,14 +66,23 @@ header h1 {
   color: #333;
 }
 
-.dataread select,
-.dataread2 input {
+.dataread select {
   width: 100%;
-  padding: 10px;
+  padding: 12px 10px; /* Increased top/bottom padding */
   border: 2px solid #ccc;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 18px; /* Increased from 16px */
   color: #26282a;
+}
+
+.dataread2 input {
+  width: 100%;
+  padding: 12px 10px; /* Increased top/bottom padding */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px; /* Increased from 16px */
+  color: #26282a;
+  margin-bottom: 10px; /* Add some space below */
 }
 
 .dataread select:focus,
@@ -178,6 +187,6 @@ header h1 {
 @media (max-width: 500px) {
   .inputfield {
     width: 95%;
-    max-width: 350px;
+    max-width: 450px; /* Increased from 350px */
   }
 }
