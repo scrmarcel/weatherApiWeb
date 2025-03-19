@@ -1,75 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Wetter Daten</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        #nachricht {
-            position: fixed;
-            bottom: 200px;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            background-color: red;
-            border: 3px solid white;
-            border-radius: 4px;
-            padding: 10px;
-            display: none;
-        }
-    </style>
+</head>
 
 <body>
-
     <header>
-        <h1>Wetter Daten AnfrageQ!</h1>
+        <h1>Wetter Daten Anfrage</h1>
     </header>
 
+    <div class="container">
+        <div class="inputfield">
+            <h3>Eingabefeld</h3>
 
-    <div class="inputfield">
-
-        <h3>Eingabefeld</h3>
-
-        <div class="dataread">
-            <b>Stadt</b>
-            <input type="text" id="textinp">
-        </div>
-
-        <div class="dataread2">
-
-            <b>Empfänger</b>
-
-            <input type="email" id="mailinp">
-
-            <div>
-
-
-                <button id="funcbut" button class="send button styled" type="button">Absenden</button>
-
-                <script src="function.js"></script>
+            <div class="dataread">
+                <label for="stadtSelect"><b>Stadt</b></label>
+                <select id="stadtSelect">
+                    <option value="">Stadt auswählen</option>
+                    <option value="Wolfsburg">Wolfsburg</option>
+                    <option value="Gifhorn">Gifhorn</option>
+                    <option value="Wittingen">Wittingen</option>
+                    <option value="Braunschweig">Braunschweig</option>
+                    <option value="Peine">Peine</option>
+                </select>
+                <div id="stadtError" class="error-text">Bitte wählen Sie eine Stadt aus.</div>
             </div>
 
-        </div>
+            <div class="dataread2">
+                <label for="mailinp"><b>E-Mail Adresse</b></label>
+                <input type="email" id="mailinp" placeholder="beispiel@mail.com">
+                <div id="emailError" class="error-text">Bitte geben Sie eine gültige E-Mail-Adresse ein.</div>
 
+                <div class="button-container">
+                    <button id="funcbut" class="styled">Absenden</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="nachricht"></div>
 
-
     <div class="textlogo">
-        <a href="https://www.schnellecke.com/">Schnelleke</a>
-
+        <a href="https://www.schnellecke.com/">Schnellecke</a>
     </div>
 
-
+    <script src="function.js"></script>
 </body>
 
 </html>
