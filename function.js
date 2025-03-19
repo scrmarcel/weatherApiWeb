@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
       nachricht.style.display = "block";
 
       // URL mit ausgewählter Stadt und E-Mail
-      const url = `https://172.16.1.41/dw/Request/requestForWeather/${encodeURIComponent(
+      const url = `https://wobtest.lobster.internal.schnellecke.com/dw/Request/requestForWeather/${encodeURIComponent(
         selectedStadt
       )}/${encodeURIComponent(emailValue)}`;
 
